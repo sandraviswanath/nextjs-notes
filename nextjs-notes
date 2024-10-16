@@ -1,0 +1,65 @@
+day-1
+
+Next js
+next js is a full stack frame work
+file based routing
+
+how react works?
+client side rendering
+client(browser) request a page to server
+the server gives html+bundle of js file
+And the browser execute the js and shows the page.
+
+how next js works?
+srver side rendering
+system(client) request a page ----> the page build by server and the page will be send to the client.so the initial load time is less.
+
+react is not SEO frndly.
+next js is SEO frndly.
+
+
+day-2
+
+Next js Routing
+---------------
+react-->react-router-dom
+nextjs have file based routing
+there are two types of routing-->app routing and page routing
+ installation
+ npx create-next-app@latest
+ 
+ redirect to the folder-->app--> create a folder(eg: about)
+ localhost:3000/about
+ layout act as wrapper.
+ 
+ how to make client side component?
+ 'use client';
+ 
+ 
+ day-3
+ 
+ Dynamic Routing
+ 
+ for dynamic routing--> useRouter is used for client components
+ const router=useRouter();------> useRouter provided by next/router
+ const{id}=router.query;
+ or
+ import { useParams } from "next/navigation";
+ const { id } = useParams();
+ 
+ useNavigation is used for server components
+ const navigation = useNavigation();----->useNavigation provided by next/navigation
+ const {id}=navigation.params;
+ 
+ 
+ 
+ navigation--> when form submission
+  const router=useRouter();
+  router.push('/profile')
+ 
+ 
+ 
+ 
+ 
+ 
+ 
